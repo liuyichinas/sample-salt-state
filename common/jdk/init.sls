@@ -8,7 +8,7 @@ common.formula.jdk fetch java source:
     - archive_format: tar
     - options: v
     - source: salt://tmp/{{ version }}/{{ package }}
-    # - source: https://{{ ausername }}:{{ atoken }}@{{ ahost }}/{{ arootdir }}/{{ zip_repo}}/{{ repopath }}/{{ version }}/{{ package }}
+    # - source: https://tmp/{{ version }}/{{ package }}
     - user: root
     - group: root
     - if_missing: /usr/lib/jdk{{ version }}
